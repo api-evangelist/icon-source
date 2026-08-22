@@ -64,5 +64,8 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Icon Source is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Icon Source is a Denver, Colorado marketplace that connects brands, marketing agencies and universities with professional and college athletes for endorsement, appearance, speaking and social-media deals, including Name, Image and Likeness (NIL) engagements. Founded in 2018 by Chase Garrett, the platform lets brands search and filter verified athletes by location, interest, rate, audience size and demographics, build and send contracts, and pay athletes in-platform, charging a 10% transaction fee on each deal that is signed and closed. Icon Suite (launched March 2022) adds NIL disclosure and compliance tooling for universities.
+
+**No public API.** Icon Source is delivered strictly as an end-user product — a web application at `prod.iconsource.app` plus iOS and Android apps. It publishes no developer portal, API reference, OpenAPI/AsyncAPI/GraphQL contract, SDK, webhook catalog, MCP server or A2A agent card. The application's only backend is a private tRPC service at `api.prod.iconsource.app`, which publishes no machine-readable schema and is not offered for third-party integration. See `x-coverage` in `apis.yml` for the probed evidence.
+
+- https://iconsource.com/

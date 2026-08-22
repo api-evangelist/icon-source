@@ -1,0 +1,18 @@
+generated: '2026-08-22'
+method: searched
+source: https://iconsource.com/brands/
+plan_count: 0
+note: >-
+  Icon Source publishes no API plans, because it publishes no API. It also publishes no tiered
+  product pricing page — https://iconsource.com/pricing returns 404. The only commercial term
+  stated publicly is a transaction fee on marketplace deals, recorded below as a commercial model
+  rather than as a plan. No common[] pointer of type Plans is wired from this file: with
+  plan_count 0 and no API surface, a pointer would assert a published plan set that does not exist.
+commercial_model:
+- name: Marketplace transaction fee
+  applies_to: brands
+  fee: 10%
+  basis: each endorsement deal signed and closed through the platform
+  source: https://iconsource.com/brands/
+  quote: "Icon Source charges a 10% transaction fee for each deal signed and closed."
+plans: []

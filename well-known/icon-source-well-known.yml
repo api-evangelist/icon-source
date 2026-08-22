@@ -1,0 +1,97 @@
+generated: '2026-08-22'
+method: probed
+source: >-
+  Live unauthenticated GET of the five canonical /.well-known/ paths against every Icon Source
+  host discovered in STEP 0b — the marketing site, the web application, and the two API backends.
+note: >-
+  Every path missed. No common[] pointer of type WellKnown, APICatalog or SecurityTxt is wired
+  from this file, because a recorded absence is not a served surface. prod.iconsource.app answers
+  HTTP 200 on every /.well-known/* path with the same 1,300-byte single-page-app HTML shell it
+  returns for every unrouted path (byte-identical across all five probes); that is a catch-all,
+  not a document, and it is scored here as a miss.
+hosts:
+- host: iconsource.com
+  role: marketing site (WordPress)
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+- host: prod.iconsource.app
+  role: web application (SPA)
+  note: >-
+    All five paths return HTTP 200 with an identical 1,300-byte HTML SPA shell. Treated as a miss,
+    not a hit — no document is served.
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    content_type: text/html
+    verdict: spa-shell
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    content_type: text/html
+    verdict: spa-shell
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    content_type: text/html
+    verdict: spa-shell
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    content_type: text/html
+    verdict: spa-shell
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    content_type: text/html
+    verdict: spa-shell
+- host: api.prod.iconsource.app
+  role: private tRPC backend for the web and mobile apps
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+- host: api.iconsource.com
+  role: legacy backend (AWS Elastic Beanstalk, iconwireapiprod); only /health answers 200
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null

@@ -1,0 +1,63 @@
+# Icon Source
+
+> Icon Source is a Denver, Colorado marketplace connecting brands, marketing agencies and
+> universities with professional and college athletes for endorsement, appearance, speaking and
+> social-media deals, including Name, Image and Likeness (NIL) engagements. Founded 2018 by Chase
+> Garrett. Brands search verified athletes by location, interest, rate, audience size and
+> demographics, build and send contracts, and pay athletes in-platform; Icon Source charges a 10%
+> transaction fee on each deal signed and closed. Icon Suite (March 2022) adds NIL disclosure and
+> compliance tooling for universities.
+
+## Important note for agents
+
+Icon Source publishes NO public API. There is no developer portal, no API reference, no OpenAPI,
+AsyncAPI, GraphQL SDL, Postman collection, SDK, webhook catalog, MCP server or A2A agent card.
+The product is delivered only as an end-user web application and iOS/Android apps.
+
+The application's backend at `https://api.prod.iconsource.app` is a private tRPC service used by
+Icon Source's own clients. tRPC publishes no OpenAPI document or SDL, the endpoint requires an
+authenticated session, and it is not offered for third-party integration. Do not treat it as an
+integration surface. A legacy AWS Elastic Beanstalk backend at `https://api.iconsource.com`
+answers only `GET /health` with `"Healthy"`.
+
+There is no programmatic path to Icon Source data. Human onboarding through sign-up is the only
+supported route.
+
+## Product
+
+- [Icon Source home](https://iconsource.com/): Athletic endorsements marketplace for brands.
+- [For brands](https://iconsource.com/brands/): Browse athletes, create contracts, track ROI; 10% transaction fee per closed deal.
+- [For college athletes](https://iconsource.com/college-athletes/): NIL endorsement opportunities for collegiate athletes.
+- [For pro athletes](https://iconsource.com/pro-athletes/): Endorsement, appearance and social engagements for professional athletes.
+- [For universities](https://iconsource.com/universities/): Icon Suite — NIL disclosure and compliance management.
+- [For marketing agencies](https://iconsource.com/marketing-agencies/): Agency access to the athlete marketplace.
+- [What is NIL](https://iconsource.com/what-is-nil/): Explainer on Name, Image and Likeness.
+
+## Access
+
+- [Sign up](https://prod.iconsource.app/r/signup): Create a brand or athlete account.
+- [Sign in](https://prod.iconsource.app/r/signin): Web application login.
+- [iOS app](https://apps.apple.com/us/app/icon-source/id1495919228)
+- [Android app](https://play.google.com/store/apps/details?id=com.companyname.iconsource)
+
+## Company and content
+
+- [About](https://iconsource.com/about-us/): Founding, team and milestones.
+- [Blog](https://iconsource.com/blog/) ([RSS](https://iconsource.com/feed/))
+- [News](https://iconsource.com/news/)
+- [Podcasts](https://iconsource.com/podcasts/)
+- [Resources](https://iconsource.com/resources/)
+- [Contact](https://iconsource.com/contact-us/): The only support channel; no developer support exists.
+- [LinkedIn](https://www.linkedin.com/company/icon-source)
+
+## Legal
+
+- [Terms of service — brands](https://iconsource.com/terms-of-service-brands/)
+- [Terms of service — athletes](https://iconsource.com/terms-of-service-athletes/)
+- [Privacy policy](https://prod.iconsource.app/privacy-policy.html)
+
+## Provenance
+
+Generated 2026-08-22 by the API Evangelist enrichment pipeline from Icon Source's own public
+website and from live unauthenticated probes of iconsource.com, prod.iconsource.app,
+api.prod.iconsource.app and api.iconsource.com. This file is not published by Icon Source.

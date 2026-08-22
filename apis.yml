@@ -1,7 +1,17 @@
 aid: icon-source
 name: Icon Source
-description: 'Icon Source is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Icon Source is a Denver, Colorado marketplace that connects brands, marketing agencies and
+  universities with professional and college athletes for endorsement, appearance, speaking and
+  social-media deals, including Name, Image and Likeness (NIL) engagements. Founded in 2018 by
+  Chase Garrett, the platform lets brands search and filter verified athletes by location,
+  interest, rate, audience size and demographics, build and send contracts, and pay athletes
+  in-platform, charging a 10% transaction fee on each deal that is signed and closed. A companion
+  product, Icon Suite (launched March 2022), gives universities NIL disclosure and compliance
+  tooling. Icon Source is delivered strictly as an end-user product — a web application at
+  prod.iconsource.app plus iOS and Android apps — and publishes no public API, SDK, developer
+  portal or machine-readable contract of any kind.
+image: https://iconsource.com/wp-content/uploads/2022/07/cropped-favicon-192x192.jpg
 url: https://raw.githubusercontent.com/api-evangelist/icon-source/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +22,15 @@ created: '2026-08-22'
 modified: '2026-08-22'
 tags:
 - Company
+- Sports
+- Athletes
+- Marketing
+- Advertising
+- Influencer Marketing
+- Marketplace
+- NIL
+- Sponsorship
+- Higher Education
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +38,51 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/icon-source-domain-security.yml
+- type: LLMsTxt
+  url: llms/icon-source-llms.txt
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://iconsource.com/
+- type: Blog
+  url: https://iconsource.com/blog/
+- type: BlogRSS
+  url: https://iconsource.com/feed/
+- type: Support
+  url: https://iconsource.com/contact-us/
+- type: SignUp
+  url: https://prod.iconsource.app/r/signup
+- type: Login
+  url: https://prod.iconsource.app/r/signin
+- type: TermsOfService
+  url: https://iconsource.com/terms-of-service-brands/
+- type: PrivacyPolicy
+  url: https://prod.iconsource.app/privacy-policy.html
+- type: LinkedIn
+  url: https://www.linkedin.com/company/icon-source
+
+x-enrichment:
+  date: '2026-08-22'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Icon Source ships its athlete-endorsement marketplace only as an end-user web and mobile
+    product; iconsource.com/developers, /developer, /api and /docs all 404, no GitHub organization
+    exists, and the app's sole backend is a private tRPC service at api.prod.iconsource.app that
+    answers every path with 'No "query"-procedure on path' and publishes no OpenAPI or SDL.
+  evidence:
+  - url: https://iconsource.com/developers
+    status: 404
+  - url: https://iconsource.com/api
+    status: 404
+  - url: https://api.prod.iconsource.app/openapi.json
+    status: 404
+  - url: https://api.iconsource.com/swagger.json
+    status: 404
+  - url: https://iconsource.com/.well-known/api-catalog
+    status: 404
+  checked: '2026-08-22'

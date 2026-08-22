@@ -1,0 +1,13 @@
+generated: '2026-08-22'
+method: searched
+source: https://iconsource.com/
+limit_count: 0
+note: >-
+  No rate limits are documented, because Icon Source publishes no API and no developer
+  documentation of any kind. https://iconsource.com/developers, /developer, /api and /docs all
+  return 404. The application's private tRPC backend at https://api.prod.iconsource.app returns
+  no RateLimit-* or X-RateLimit-* headers on an unauthenticated request; it answers every path
+  with a tRPC NOT_FOUND envelope. No common[] pointer of type RateLimits is wired from this file:
+  with limit_count 0 and no API surface, a pointer would assert a runtime signal that does not exist.
+rate_limits: []
+response_headers: []
