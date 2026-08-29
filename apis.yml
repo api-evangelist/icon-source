@@ -11,6 +11,17 @@ description: >-
   tooling. Icon Source is delivered strictly as an end-user product — a web application at
   prod.iconsource.app plus iOS and Android apps — and publishes no public API, SDK, developer
   portal or machine-readable contract of any kind.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://iconsource.com/wp-content/uploads/2022/07/cropped-favicon-192x192.jpg
 url: https://raw.githubusercontent.com/api-evangelist/icon-source/refs/heads/main/apis.yml
 x-type: company
