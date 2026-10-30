@@ -64,8 +64,96 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Icon Source is a Denver, Colorado marketplace that connects brands, marketing agencies and universities with professional and college athletes for endorsement, appearance, speaking and social-media deals, including Name, Image and Likeness (NIL) engagements. Founded in 2018 by Chase Garrett, the platform lets brands search and filter verified athletes by location, interest, rate, audience size and demographics, build and send contracts, and pay athletes in-platform, charging a 10% transaction fee on each deal that is signed and closed. Icon Suite (launched March 2022) adds NIL disclosure and compliance tooling for universities.
+Icon Source is a Denver, Colorado marketplace that connects brands, marketing agencies and universities with professional and college athletes for endorsement, appearance, speaking and social-media deals, including Name, Image and Likeness (NIL) engagements. Founded in 2018 by Chase Garrett, the platform lets brands search and filter verified athletes by location, interest, rate, audience size and demographics, build and send contracts, and pay athletes in-platform, charging a 10% transaction fee on each deal that is signed and closed. A companion product, Icon Suite (launched March 2022), gives universities NIL disclosure and compliance tooling. Icon Source is delivered strictly as an end-user product — a web application at prod.iconsource.app plus iOS and Android apps — and publishes no public API, SDK, developer portal or machine-readable contract of any kind.
 
-**No public API.** Icon Source is delivered strictly as an end-user product — a web application at `prod.iconsource.app` plus iOS and Android apps. It publishes no developer portal, API reference, OpenAPI/AsyncAPI/GraphQL contract, SDK, webhook catalog, MCP server or A2A agent card. The application's only backend is a private tRPC service at `api.prod.iconsource.app`, which publishes no machine-readable schema and is not offered for third-party integration. See `x-coverage` in `apis.yml` for the probed evidence.
+**Areas:** Company · Sports · Athletes · Marketing · Advertising · Influencer Marketing · Marketplace · NIL · Sponsorship · Higher Education
 
-- https://iconsource.com/
+## Icon Source on APIs.io
+
+Everything profiled for Icon Source is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/icon-source/](https://apis.io/providers/icon-source/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Icon Source Domain Security](https://apis.io/security/icon-source/icon-source-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Icon Source Plans Pricing](https://apis.io/plans/icon-source/icon-source-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Icon Source Rate Limits](https://apis.io/rate-limits/icon-source/icon-source-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://iconsource.com/)
+- [Sign up](https://prod.iconsource.app/r/signup)
+- [Support](https://iconsource.com/contact-us/)
+- [Blog](https://iconsource.com/blog/)
+- [Terms of service](https://iconsource.com/terms-of-service-brands/)
+- [Privacy policy](https://prod.iconsource.app/privacy-policy.html)
+
+## API Evangelist rating
+
+**Kin Score 11.8** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 27.6 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Education & Research
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/icon-source/](https://apis.io/providers/icon-source/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Icon Source: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/icon-source/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
